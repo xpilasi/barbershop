@@ -8,7 +8,7 @@ const menuClasses = ref('p-10 text-sm ');
 
 const scrollPosition = null;
 const mobile = true;
-const mobileNav = null;
+const mobileNav = true;
 const windowWidth = null;
 
 //menu scrolling down
@@ -30,12 +30,9 @@ onMounted(()=>{
     <nav>
 
     <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
-    <div class="flex justify-end mt-5">
-
-      
-    </div>
+    
     <div>
-      <button @click="toggleMenu" v-show="mobile" class="text-white focus:outline-none mr-10">
+      <button @click="toggleMenu" v-show="mobile" class="flex absolute text-white focus:outline-none h-max justify-end">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
@@ -51,18 +48,18 @@ onMounted(()=>{
           />
         </svg>
       </button>
-        <ul v-show="!mobile" class=' bg-red-950 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
+      <!-- Nav no Mobile -->
+        <ul v-show="!mobile" class='flex bg-red-950 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
-            <li ><a href=# >PRECIOS</a></li>
-            <li ><a href=# >AGENDAR</a></li>
-            <li ><a href=# >UBICACIÓN</a></li>
-            <li ><a href=# >CLIENTES</a></li>
+            <li class='mr-5'><a href=# >PRECIOS</a></li>
+            <li class='mr-5'><a href=# >AGENDAR</a></li>
+            <li class='mr-5'><a href=# >UBICACIÓN</a></li>
+            <li class='mr-5'><a href=# >CLIENTES</a></li>
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
-        <!-- Logo burber Menu -->
-      
-      <!-- End logo burger Menu -->
-        <ul v-show="mobile" class='lg:flex bg-slate-600 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
+       
+      <!-- Nav mobile -->
+        <ul v-show="mobileNav" class='lg:hidden bg-slate-600 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             <li ><a href=# >PRECIOS</a></li>
             <li ><a href=# >AGENDAR</a></li>

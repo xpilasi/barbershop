@@ -7,7 +7,7 @@ const description = "A traditionally-inspired upscale barbershop on the ground f
 
 </script>
 <template>
-<div class='pt-40 py-10 bg-green-200  flex justify-center items-center'>
+<div class='pt-40 py-10 bg-green-600  flex justify-center items-center'>
     <div>
 
         <div class='bg-barber-bg justify-center px-60 text-2xl  text-white'>
