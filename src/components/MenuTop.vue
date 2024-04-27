@@ -13,27 +13,22 @@ const handleScroll = ()=>{
     }else{
         menuClasses.value = 'p-10 text-sm transition-all duration-300';
     }
-}
-
 
 onMounted(()=>{
     window.addEventListener('scroll',handleScroll);
-    const isFullScreen = window.innerWidth <= 768;
-    if (isFullScreen) { // 768px es el punto de corte para dispositivos md
-        menuClasses.value = 'md:h-screen';
-}
-});
-
-
-
-// Lógica para detectar el tamaño de la pantalla y activar el modo pantalla completa en dispositivos md y más pequeños
-
     
+});
+}
+ 
 </script>
 <template>
-   <div :class="{ 'md:h-screen': isFullScreen }">
-    <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
+   <header>
+    <nav>
+
+      <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
     <div class="lg:hidden flex justify-end mt-5">
+
+      <!-- Logo burber Menu -->
       <button @click="toggleMenu" class="text-white focus:outline-none mr-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +45,12 @@ onMounted(()=>{
           />
         </svg>
       </button>
+      <!-- End logo burger Menu -->
     </div>
-    <div class='  flex justify-center  '>
-        <ul class='lg:flex  mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
+    <div :class=menuResponsive>
+        <ul class='lg:flex bg-slate-600 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
-            <li :class=menuClasses><a href=# :class=hoverMenu>PRECIOS</a></li>
+            <li :class= test><a href=# :class=hoverMenu>PRECIOS</a></li>
             <li :class=menuClasses><a href=# :class=hoverMenu>AGENDAR</a></li>
             <li :class=menuClasses><a href=# :class=hoverMenu>UBICACIÓN</a></li>
             <li :class=menuClasses><a href=# :class=hoverMenu>CLIENTES</a></li>
@@ -63,12 +59,14 @@ onMounted(()=>{
         </ul>
     </div>
    </div>
+    </nav>
+
 
     
 
     
 
-</div>
+</header>
 
 </template>
 
