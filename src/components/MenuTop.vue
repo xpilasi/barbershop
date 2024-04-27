@@ -9,6 +9,10 @@ const menuClasses = ref('p-10 text-sm ');
 const scrollPosition = null;
 const mobile = true;
 const mobileNav = true;
+const showMenuIcon = false;
+
+
+
 const windowWidth = null;
 
 //menu scrolling down
@@ -32,10 +36,10 @@ onMounted(()=>{
     <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
     
     <div>
-      <button @click="toggleMenu" v-show="mobile" class="flex absolute text-white focus:outline-none h-max justify-end">
+      <button @click="toggleMenu" v-show="showMenuIcon" class="flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="h-12 w-12 "
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -47,7 +51,14 @@ onMounted(()=>{
             d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>
+       
+        
       </button>
+      <button @click="toggleMenu" v-show="mobileNav" class="flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
+          </svg>
+        </button>
       <!-- Nav no Mobile -->
         <ul v-show="!mobile" class='flex bg-red-950 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
@@ -59,12 +70,12 @@ onMounted(()=>{
         </ul>
        
       <!-- Nav mobile -->
-        <ul v-show="mobileNav" class='lg:hidden bg-slate-600 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
+        <ul v-show="mobileNav" class='lg:hidden flex flex-col bg-gray-800 h-screen text-3xl  text-white font-hilborn tracking-wider pt-40 items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
-            <li ><a href=# >PRECIOS</a></li>
-            <li ><a href=# >AGENDAR</a></li>
-            <li ><a href=# >UBICACIÓN</a></li>
-            <li ><a href=# >CLIENTES</a></li>
+            <li class='py-10'><a href=# >PRECIOS</a></li>
+            <li class='py-10'><a href=# >AGENDAR</a></li>
+            <li class='py-10'><a href=# >UBICACIÓN</a></li>
+            <li class='py-10'><a href=# >CLIENTES</a></li>
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
     </div>
