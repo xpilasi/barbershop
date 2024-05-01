@@ -9,7 +9,7 @@ const menuClasses = ref('p-10 text-sm ');
 const scrollPosition = ref(null);
 const mobile = ref(true);
 const mobileNav = ref(null);
-const showMenuIcon =ref(null);
+const showMenuIcon =ref(true);
 const windowWidth = ref(null);
 
 const toggleMenu = ()=> {
@@ -21,15 +21,15 @@ const toggleMenu = ()=> {
 const checkScreen = ()=>{
   windowWidth.value = window.innerWidth;
   
-  if(windowWidth.value <= 750){
-    mobile.value = true;
-    
+  if(windowWidth.value < 768){
+    mobile.value = true; 
     console.log('WTF - Mobile: '+mobile.value);
     console.log('WTF - Mobile: '+mobile.value+' - ShowMenuIcon: '+showMenuIcon.value);
     
   }else{
     mobileNav.value = false;
   mobile.value = false;
+  showMenuIcon.value = true;
   
   }
   
