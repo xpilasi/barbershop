@@ -9,19 +9,35 @@ const menuClasses = ref('p-10 text-sm ');
 const scrollPosition = ref(null);
 const mobile = ref(true);
 const mobileNav = ref(null);
-const showMenuIcon =ref(true);
+const showMenuIcon =ref(null);
+const windowWidth = ref(null);
 
 const toggleMenu = ()=> {
   mobileNav.value = !mobileNav.value;
   showMenuIcon.value = !showMenuIcon.value;
   
-  console.log(mobileNav.value);
 };
+
+const checkScreen = ()=>{
+  windowWidth.value = window.innerWidth;
+  
+  if(windowWidth.value <= 750){
+    mobile.value = true;
+    
+    console.log('WTF - Mobile: '+mobile.value);
+    console.log('WTF - Mobile: '+mobile.value+' - ShowMenuIcon: '+showMenuIcon.value);
+    
+  }else{
+    mobileNav.value = false;
+  mobile.value = false;
+  
+  }
+  
+  
   
 
+}
 
-
-const windowWidth = null;
 
 //menu scrolling down
 const handleScroll = ()=>{
@@ -29,13 +45,17 @@ const handleScroll = ()=>{
         menuClasses.value = 'p-2 text-sm  transition-all duration-300';
     }else{
         menuClasses.value = 'p-10 text-sm transition-all duration-300';
-    }
-
+    };
+  }
 onMounted(()=>{
+    
     window.addEventListener('scroll',handleScroll);
+    window.addEventListener('resize',checkScreen);
+    
+    checkScreen();
     
 });
-}
+
  
 </script>
 <template>
@@ -45,7 +65,7 @@ onMounted(()=>{
     <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
     
     <div>
-      <button @click="toggleMenu" v-show="showMenuIcon" class="lg:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+      <button @click="toggleMenu" v-show=showMenuIcon class="md:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-12 w-12 "
@@ -63,23 +83,23 @@ onMounted(()=>{
        
         
       </button>
-      <button @click="toggleMenu" v-show="mobileNav" class="lg:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+      <button @click="toggleMenu" v-show= mobileNav class="md:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
           </svg>
         </button>
       <!-- Nav no Mobile -->
-        <ul v-show="!mobile" class='flex bg-red-950 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
+        <ul v-show= !mobile class='flex bg-red-950 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
-            <li class='mr-5'><a href=# >PRECIOS</a></li>
-            <li class='mr-5'><a href=# >AGENDAR</a></li>
-            <li class='mr-5'><a href=# >UBICACIÓN</a></li>
-            <li class='mr-5'><a href=# >CLIENTES</a></li>
+            <li :class=menuClasses><a href=# >PRECIOS</a></li>
+            <li :class=menuClasses><a href=# >AGENDAR</a></li>
+            <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
+            <li :class=menuClasses><a href=# >CLIENTES</a></li>
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
        
       <!-- Nav mobile -->
-        <ul v-show="mobileNav" class='lg:hidden flex flex-col bg-gray-800 h-screen text-3xl  text-white font-hilborn tracking-wider pt-40 items-center'>
+        <ul v-show= mobileNav class='lg:hidden flex flex-col bg-gray-800 h-screen text-3xl  text-white font-hilborn tracking-wider pt-40 items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             <li class='py-10'><a href=# >PRECIOS</a></li>
             <li class='py-10'><a href=# >AGENDAR</a></li>
