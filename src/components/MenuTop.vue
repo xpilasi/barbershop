@@ -6,10 +6,18 @@ import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
 
 const menuClasses = ref('p-10 text-sm ');
 
-const scrollPosition = null;
-const mobile = true;
-const mobileNav = true;
-const showMenuIcon = false;
+const scrollPosition = ref(null);
+const mobile = ref(true);
+const mobileNav = ref(null);
+const showMenuIcon =ref(true);
+
+const toggleMenu = ()=> {
+  mobileNav.value = !mobileNav.value;
+  showMenuIcon.value = !showMenuIcon.value;
+  
+  console.log(mobileNav.value);
+};
+  
 
 
 
@@ -25,6 +33,7 @@ const handleScroll = ()=>{
 
 onMounted(()=>{
     window.addEventListener('scroll',handleScroll);
+    
 });
 }
  
@@ -36,7 +45,7 @@ onMounted(()=>{
     <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
     
     <div>
-      <button @click="toggleMenu" v-show="showMenuIcon" class="flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+      <button @click="toggleMenu" v-show="showMenuIcon" class="lg:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-12 w-12 "
@@ -54,7 +63,7 @@ onMounted(()=>{
        
         
       </button>
-      <button @click="toggleMenu" v-show="mobileNav" class="flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+      <button @click="toggleMenu" v-show="mobileNav" class="lg:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
           </svg>
