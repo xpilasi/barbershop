@@ -68,7 +68,8 @@ onMounted(()=>{
       
       
       <!-- Nav no Mobile -->
-        <ul v-show= !mobile class='flex bg-red-950  text-white font-hilborn tracking-wider justify-center items-center'>
+      
+        <ul v-show= !mobile class='flex bg-barber-bg  text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             <li :class=menuClasses><a href=# >PRECIOS</a></li>
             <li :class=menuClasses><a href=# >AGENDAR</a></li>
@@ -77,6 +78,8 @@ onMounted(()=>{
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
        
+      
+        
       <!-- Nav mobile -->
       <div v-show=mobile class='bg-red-300 h-20'>
 
