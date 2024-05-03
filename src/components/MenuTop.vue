@@ -65,7 +65,22 @@ onMounted(()=>{
     
     
     <div>
-      <button @click=toggleMenu v-show=showMenuIcon class="md:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+      
+      
+      <!-- Nav no Mobile -->
+        <ul v-show= !mobile class='flex bg-red-950  text-white font-hilborn tracking-wider justify-center items-center'>
+            <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
+            <li :class=menuClasses><a href=# >PRECIOS</a></li>
+            <li :class=menuClasses><a href=# >AGENDAR</a></li>
+            <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
+            <li :class=menuClasses><a href=# >CLIENTES</a></li>
+            <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
+        </ul>
+       
+      <!-- Nav mobile -->
+      <div v-show=mobile class='bg-red-300 h-20'>
+
+        <button @click=toggleMenu v-show=showMenuIcon class="md:hidden  flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-12 w-12 "
@@ -80,26 +95,17 @@ onMounted(()=>{
             d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>
-       
-        
-      </button>
-      <button @click=toggleMenu v-show= mobileNav class="md:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
+
+
+        </button>
+        <button @click=toggleMenu v-show= mobileNav class="md:hidden flex absolute right-0   text-white focus:outline-none h-20 w-20 justify-center items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
           </svg>
         </button>
-      <!-- Nav no Mobile -->
-        <ul v-show= !mobile class='flex bg-red-950  text-white font-hilborn tracking-wider justify-center items-center'>
-            <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
-            <li :class=menuClasses><a href=# >PRECIOS</a></li>
-            <li :class=menuClasses><a href=# >AGENDAR</a></li>
-            <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
-            <li :class=menuClasses><a href=# >CLIENTES</a></li>
-            <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
-        </ul>
-       
-      <!-- Nav mobile -->
-        <ul v-show= mobileNav class='lg:hidden flex flex-col bg-gray-800 h-screen text-3xl  text-white font-hilborn tracking-wider pt-40 items-center'>
+      </div>
+      <div v-show= mobileNav class='lg:hidden flex fixed flex-col bg-barber-bg h-screen w-screen text-3xl  text-white font-hilborn tracking-wider pt-40 items-center'>
+        <ul v-show= mobileNav >
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             <li class='py-10'><a href=# >PRECIOS</a></li>
             <li class='py-10'><a href=# >AGENDAR</a></li>
@@ -107,6 +113,8 @@ onMounted(()=>{
             <li class='py-10'><a href=# >CLIENTES</a></li>
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
+      </div>
+        
     </div>
    
     </nav>
