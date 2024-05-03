@@ -4,7 +4,7 @@ import {ref,onMounted} from 'vue';
 import barbershopSvgLogo from '../assets/img/icons/barber_shop.svg';
 import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
 
-const menuClasses = ref('p-10 text-sm ');
+const menuClasses = ref('px-10 text-sm ');
 
 const scrollPosition = ref(null);
 const mobile = ref(true);
@@ -62,7 +62,7 @@ onMounted(()=>{
    <header>
     <nav>
 
-    <div class=' bg-barber-bg fixed top-0 w-full z-10 '>
+    
     
     <div>
       <button @click=toggleMenu v-show=showMenuIcon class="md:hidden flex absolute right-0 text-white focus:outline-none h-20 w-20 justify-center items-center">
@@ -89,7 +89,7 @@ onMounted(()=>{
           </svg>
         </button>
       <!-- Nav no Mobile -->
-        <ul v-show= !mobile class='flex bg-red-950 mx-20 text-white font-hilborn tracking-wider justify-center items-center'>
+        <ul v-show= !mobile class='flex bg-red-950  text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             <li :class=menuClasses><a href=# >PRECIOS</a></li>
             <li :class=menuClasses><a href=# >AGENDAR</a></li>
@@ -108,7 +108,7 @@ onMounted(()=>{
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
     </div>
-   </div>
+   
     </nav>
 
 
