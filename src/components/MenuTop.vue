@@ -3,6 +3,7 @@
 import {ref,onMounted} from 'vue';
 import barbershopSvgLogo from '../assets/img/icons/barber_shop.svg';
 import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
+import barberLogo from '../assets/img/logos/barberLogo.svg'
 
 const menuClasses = ref('px-10 text-sm ');
 
@@ -90,9 +91,9 @@ onMounted(()=>{
         </div>
         
       </div>  
-        <div v-show= mobileNav class='lg:hidden right-0 left-0 flex fixed flex-col bg-barber-bg h-screen w-screen text-3xl  text-white font-hilborn tracking-wider items-center'>
-          <ul v-show= mobileNav >
-              <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
+        <div v-show= mobileNav class='  lg:hidden right-0 left-0 flex fixed flex-col bg-barber-bg h-screen w-screen text-3xl  text-white font-hilborn tracking-wider items-center'>
+          <ul class='transition duration-500 ease-in-out'>
+              
               <li class='pb-20'>             
                 <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,11 +101,12 @@ onMounted(()=>{
                   </svg>
                 </button>
               </li>
-              <li class='py-10 text-center'><a href=# >PRECIOS</a></li>
-              <li class='py-10 text-center'><a href=# >AGENDAR</a></li>
-              <li class='py-10 text-center'><a href=# >UBICACIÓN</a></li>
-              <li class='py-10 text-center'><a href=# >CLIENTES</a></li>
-              <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
+              <li><img class=' ml-5 ' :src=barberLogo alt="" width='180'></li>
+              <li class='py-8 text-center'><a href=# >PRECIOS</a></li>
+              <li class='py-8 text-center'><a href=# >AGENDAR</a></li>
+              <li class='py-8 text-center'><a href=# >UBICACIÓN</a></li>
+              <li class='py-8 text-center'><a href=# >CLIENTES</a></li>
+              
           </ul>
         </div>
         
