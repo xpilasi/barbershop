@@ -4,6 +4,7 @@ import {ref,onMounted} from 'vue';
 import barbershopSvgLogo from '../assets/img/icons/barber_shop.svg';
 import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
 import barberLogo from '../assets/img/logos/barberLogo.svg'
+import instaLogo from '../assets/img/social/instagram.svg'
 
 const menuClasses = ref('px-10 text-sm ');
 
@@ -101,11 +102,13 @@ onMounted(()=>{
                   </svg>
                 </button>
               </li>
-              <li><img class=' ml-5 ' :src=barberLogo alt="" width='180'></li>
-              <li class='py-8 text-center'><a href=# >PRECIOS</a></li>
+              <li class='flex  justify-center  pb-5'><img  :src=barberLogo alt="" width='150'></li>
+              
+              <li class='py-8 text-center  '><a href=# >PRECIOS</a></li>
               <li class='py-8 text-center'><a href=# >AGENDAR</a></li>
               <li class='py-8 text-center'><a href=# >UBICACIÓN</a></li>
               <li class='py-8 text-center'><a href=# >CLIENTES</a></li>
+              <li class='flex  justify-center   pt-10'><img :src=instaLogo alt="" width='50'></li>
               
           </ul>
         </div>
