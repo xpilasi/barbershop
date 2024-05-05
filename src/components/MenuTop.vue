@@ -60,12 +60,16 @@ onMounted(()=>{
     <div>
 
       <!-- Nav no Mobile -->
-        <ul v-show= !mobile class='flex fixed right-0 left-0  bg-barber-bg  text-white font-hilborn tracking-wider justify-center items-center'>
+        <ul v-show= !mobile class='flex fixed right-0 left-0  bg-barber-bg text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
+            
             <li :class=menuClasses><a href=# >PRECIOS</a></li>
             <li :class=menuClasses><a href=# >AGENDAR</a></li>
+            <li :class=menuLogo><img class='bg-red-200  pl-2' :src=barberLogo alt="" width='100'></li>
             <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
             <li :class=menuClasses><a href=# >CLIENTES</a></li>
+            
+            <!-- <li class='flex  justify-center  '><img :src=instaLogo alt="" width='30'></li> -->
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
       <!-- Nav mobile -->
@@ -93,7 +97,7 @@ onMounted(()=>{
         
       </div>  
         <div v-show= mobileNav class='  lg:hidden right-0 left-0 flex fixed flex-col bg-barber-bg h-screen w-screen text-3xl  text-white font-hilborn tracking-wider items-center'>
-          <ul class='transition duration-500 ease-in-out'>
+          <ul>
               
               <li class='pb-20'>             
                 <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">

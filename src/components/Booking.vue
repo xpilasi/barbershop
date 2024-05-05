@@ -7,16 +7,16 @@ const description = "A traditionally-inspired upscale barbershop on the ground f
 
 </script>
 <template>
-<div class='pt-40 py-10 bg-green-600  flex justify-center items-center w-full'>
+<div class='pt-40 py-10   flex justify-center items-center w-full'>
     <div>
 
         <div class='bg-barber-bg justify-center  text-2xl  text-white'>
             <h1 class='flex justify-center py-10 font-hilborn tracking-widest text-3xl'>BARBERSHOP</h1>
             
         </div>
-        <div><p class='font-smythe'>{{description}}</p></div>
+        <div><p class='font-smythe text-white'>{{description}}</p></div>
         <div class='bg-barber-bg flex justify-center h-40 w-full'>
-            <a href="#" class='bg-red-400 p-7 my-10 text-white font-hilborn tracking-widest'>RESERVA TU HORA</a>
+            <a href="#" class=' bg-celeste p-7 my-10 text-white font-hilborn tracking-widest'>RESERVA TU HORA</a>
         </div>
         
     </div>

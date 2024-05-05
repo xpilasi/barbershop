@@ -17,7 +17,8 @@ export default {
     extend: {
       colors:{
        'barber-bg': '#1D1C1C',
-       'beige':'#D7D4D1'
+       'beige':'#D7D4D1',
+       'celeste':'#A3B2CE',
       },
       fontFamily:{
         merryRegular: 'merri_w_regular',
