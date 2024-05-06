@@ -63,9 +63,10 @@ onMounted(()=>{
         <ul v-show= !mobile class='flex fixed right-0 left-0  bg-barber-bg text-white font-hilborn tracking-wider justify-center items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             
+            <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li>
             <li :class=menuClasses><a href=# >PRECIOS</a></li>
             <li :class=menuClasses><a href=# >AGENDAR</a></li>
-            <li :class=menuLogo><img class='bg-red-200  pl-2' :src=barberLogo alt="" width='100'></li>
+            
             <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
             <li :class=menuClasses><a href=# >CLIENTES</a></li>
             
