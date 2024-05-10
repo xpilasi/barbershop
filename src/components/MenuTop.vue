@@ -6,13 +6,15 @@ import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
 import barberLogo from '../assets/img/logos/barberLogo.svg'
 import instaLogo from '../assets/img/social/instagram.svg'
 
-const menuClasses = ref('px-10 text-sm ');
+const menuClasses = ref('pl-10 text-sm  right-0 ');
+const menuLogo = 'flex left-10';
 
 const scrollPosition = ref(null);
 const mobile = ref(true);
 const mobileNav = ref(null);
 const showMenuIcon =ref(true);
 const windowWidth = ref(null);
+
 
 
 const toggleMenu = ()=> {
@@ -60,19 +62,26 @@ onMounted(()=>{
     <div>
 
       <!-- Nav no Mobile -->
-        <ul v-show= !mobile class='flex fixed right-0 left-0  bg-barber-bg text-white font-hilborn tracking-wider justify-center items-center'>
+      <div v-show= !mobile class='flex fixed right-0 left-0 sm:pr-10 sm:pl-10 md:pr-20 md:pl-20 lg:pr-60  lg:pl-60 items-center bg-barber-bg justify-between'>
+        <ul class='  text-white font-hilborn tracking-wider  items-center'>
+          <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li>
+        </ul>
+        <ul  class='flex  text-white font-hilborn tracking-wider justify-end items-center'>
             <!-- <li class='sm:hidden md:hidden lg:visible '><img :src=moustacheSvgLogo alt="" width="60"></li> -->
             
-            <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li>
+            
             <li :class=menuClasses><a href=# >PRECIOS</a></li>
             <li :class=menuClasses><a href=# >AGENDAR</a></li>
             
             <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
+            <!-- <li class='bg-blue-600'><a href=# >CLIENTES</a></li> -->
             <li :class=menuClasses><a href=# >CLIENTES</a></li>
-            
+            <!-- <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li> -->
             <!-- <li class='flex  justify-center  '><img :src=instaLogo alt="" width='30'></li> -->
             <!-- <li class='sm:hidden md:hidden'><img :src=moustacheSvgLogo alt="" width="60"></li> -->
         </ul>
+      </div>
+        
       <!-- Nav mobile -->
       <div class='flex fixed w-full left-0 right-0 bg-barber-bg justify-between'>
         <div class='flex justify-end w-full'>
