@@ -41,9 +41,9 @@ const checkScreen = ()=>{
 //menu scrolling down
 const handleScroll = ()=>{
     if (window.scrollY > 0) {
-        menuClasses.value = 'p-2 text-sm  transition-all duration-300';
+        menuClasses.value = 'pl-5 text-sm  transition-all duration-300';
     }else{
-        menuClasses.value = 'p-10 text-sm transition-all duration-300';
+        menuClasses.value = 'pl-10 text-sm transition-all duration-300';
     };
   }
 onMounted(()=>{
@@ -62,7 +62,7 @@ onMounted(()=>{
     <div>
 
       <!-- Nav no Mobile -->
-      <div v-show= !mobile class='flex fixed right-0 left-0 sm:pr-10 sm:pl-10 md:pr-20 md:pl-20 lg:pr-60  lg:pl-60 items-center bg-barber-bg justify-between'>
+      <div v-show= !mobile class='flex fixed right-0 left-0 sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg justify-between'>
         <ul class='  text-white font-hilborn tracking-wider  items-center'>
           <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li>
         </ul>
