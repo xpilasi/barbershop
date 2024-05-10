@@ -11,7 +11,7 @@ const description = "A traditionally-inspired upscale barbershop on the ground f
     <div>
 
         <div class=' flex  justify-center  text-2xl  text-white'>
-            <h1 class='bg-red-200 flex justify-center pl-2 py-10 font-hilborn tracking-widest text-3xl'>BARBERSHOP</h1>
+            <h1 class='flex justify-center pl-2 py-10 font-hilborn tracking-widest text-3xl'>BARBERSHOP</h1>
             
         </div>
         <div><p class='font-smythe text-white'>{{description}}</p></div>
