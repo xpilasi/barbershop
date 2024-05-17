@@ -9,7 +9,7 @@ import Location from './components/Location.vue';
 </script>
 
 <template >
-  <div class =  'sm:px-20 md:px-20 lg:px-60 bg-barber-bg'>
+  <div class =  ' bg-barber-bg'>
     <MenuTop/>
     <Booking/>
     <Location/>
