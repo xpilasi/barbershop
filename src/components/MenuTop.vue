@@ -73,49 +73,41 @@ onMounted(()=>{
         </ul>
       </nav>
         
-      <!-- Nav mobile -->
-      <div class='flex fixed w-full left-0 right-0 bg-barber-bg justify-between'>
+      <!-- Nav mobile closed-->
+
+      <nav class='flex fixed w-full left-0 right-0 bg-barber-bg justify-between'>
         <div class='flex justify-end w-full'>
-          <button @click=toggleMenu v-show=showMenuIcon class="md:hidden pl-3  text-white focus:outline-none h-20 w-20 justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-12 w-12 "
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
+          <!-- Burger logo -->
+          <button @click=toggleMenu v-show=showMenuIcon class="md:hidden pl-3  text-red-300 focus:outline-none h-20 w-20 justify-center items-center">
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
               </svg>
-
-
-        </button>
+              
+          </button>
         </div>
-        
-      </div>  
-        <div v-show= mobileNav class='  lg:hidden right-0 left-0 flex fixed flex-col bg-barber-bg h-screen w-screen text-3xl  text-white font-hilborn tracking-wider items-center'>
-          <ul>
-              
-              <li class='pb-20'>             
-                <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
-                  </svg>
-                </button>
-              </li>
-              <li class='flex  justify-center  pb-5'><img  :src=barberLogo alt="" width='150'></li>
-              
-              <li class='py-8 text-center  '><a href=# >PRECIOS</a></li>
-              <li class='py-8 text-center'><a href=# >AGENDAR</a></li>
-              <li class='py-8 text-center'><a href=# >UBICACIÓN</a></li>
-              <li class='py-8 text-center'><a href=# >CLIENTES</a></li>
-              <li class='flex  justify-center   pt-10'><img :src=instaLogo alt="" width='50'></li>
-              
-          </ul>
-        </div>
+      </nav>  
+
+      <!-- Nav mobile opened-->
+
+      <nav v-show= mobileNav class='  lg:hidden right-0 left-0 flex fixed flex-col bg-barber-bg h-screen w-screen text-3xl  text-white font-hilborn tracking-wider items-center'>
+        <ul>
+            <li class='pb-20'>  
+              <!-- close logo -->           
+              <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
+                </svg>
+              </button>
+            </li>
+            <li class='flex  justify-center  pb-5'><img  :src=barberLogo alt="" width='150'></li>
+            <li class='py-8 text-center'><a href=# >PRECIOS</a></li>
+            <li class='py-8 text-center'><a href=# >AGENDAR</a></li>
+            <li class='py-8 text-center'><a href=# >UBICACIÓN</a></li>
+            <li class='py-8 text-center'><a href=# >CLIENTES</a></li>
+            <li class='flex  justify-center   pt-10'><img :src=instaLogo alt="" width='50'></li>
+            
+        </ul>
+      </nav>
 </template>
 
