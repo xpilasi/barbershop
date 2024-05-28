@@ -16,7 +16,7 @@
     </script>
     <template>
         
-        <div ref="map" style="width: 1000px; height: 500px;">hola</div>
+        <div class='bg-red-300 px-10' ref="map" style="width: 1000px; height: 500px;">hola</div>
         
     </template>
 
