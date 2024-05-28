@@ -15,8 +15,10 @@
 
     </script>
     <template>
+        <section class='flex justify-center px-10 h-96 w-full' ref="map" >
+            <h2 class='p-7 my-10 text-white font-hilborn tracking-widest text-3xl'>Ubicación</h2>
+        </section>
         
-        <div class='flex justify-center h-40 w-full' ref="map" >hola</div>
         
     </template>
 
