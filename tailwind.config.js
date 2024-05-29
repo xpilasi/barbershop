@@ -5,7 +5,8 @@ export default {
     './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     backgroundImage:theme =>({
-      'barber-chair': "url('./src/assets/img/backgrounds/chair.jpg')"
+      'barber-chair': "url('./src/assets/img/backgrounds/chair.jpg')",
+      'barber-vintage': "url('./src/assets/img/backgrounds/vintage_barber.jpg')"
     }),
     letterSpacing:{
       tightest: '-.075em',

@@ -5,6 +5,7 @@ import barbershopSvgLogo from '../assets/img/icons/barber_shop.svg';
 import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
 import barberLogo from '../assets/img/logos/barberLogo.svg'
 import instaLogo from '../assets/img/social/instagram.svg'
+import whatsappLogo from '../assets/img/social/Whatsapp.svg'
 
 const menuClasses = ref('pl-10 text-sm  right-0 ');
 const menuLogo = 'flex left-10';
@@ -59,10 +60,13 @@ onMounted(()=>{
 <template>
       <!-- Nav no Mobile -->
       <nav v-show= !mobile class='flex fixed right-0 left-0 sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg justify-between'>
+        <!-- <div class='flex justify-end text-white'>
+          hola
+        </div> -->
         <ul class='  text-white font-hilborn tracking-wider  items-center'>
           <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li>
         </ul>
-        <ul  class='flex  text-white font-hilborn tracking-wider justify-end items-center'>
+        <ul  class='flex  text-white font-hilborn font-light tracking-wider justify-end items-center'>
             
             <li :class=menuClasses><a href=# >PRECIOS</a></li>
             <li :class=menuClasses><a href=# >AGENDAR</a></li>

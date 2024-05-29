@@ -15,7 +15,7 @@
 
     </script>
     <template>
-        <section  ref="map" style="height: 500;" >
+        <section  ref="map" style="height: 500;width: 500;" >hola
             <!-- <h2 class='p-7 my-10 text-white font-hilborn tracking-widest text-3xl'>Ubicación</h2> -->
         </section>
         
