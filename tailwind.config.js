@@ -7,10 +7,10 @@ export default {
     
     backgroundImage:theme =>({
       
-      'barber-booking': "url('./public/bg/booking_bg.jpg')",
-      'barber-location': "url('./public/bg/location_bg.jpg')",
-      'barber-prices': "url('./public/bg/prices_bg.jpg')",
-      'barber-gallery': "url('./public/bg/gallery_bg.jpg')",
+      'barber-booking': "url('/public/bg/booking_bg.jpg')",
+      'barber-location': "url('/public/bg/location_bg.jpg')",
+      'barber-prices': "url('/public/bg/prices_bg.jpg')",
+      'barber-gallery': "url('/public/bg/gallery_bg.jpg')",
 
     }),
     letterSpacing:{
