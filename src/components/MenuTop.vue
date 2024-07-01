@@ -69,11 +69,11 @@ onMounted(()=>{
         
         <ul  class='flex text-white font-futuraLight tracking-widest  '>
             
-            <li :class=menuClasses><a class="pl-1" href=# >RESERVA</a></li>
-            <li :class=menuClasses><a class="pl-1" href=# >UBICACION</a></li>
-            <li :class=menuClasses><a class="pl-1" href=# >PRECIOS</a></li>
-            <li :class=menuClasses><a class="pl-1" href=# >GALERIA</a></li>
-            <li :class=menuClasses><a class="pl-1" href=# >CONTACTO</a></li>
+            <li :class=menuClasses><a class="pl-1" href=#reserva >RESERVA</a></li>
+            <li :class=menuClasses><a class="pl-1" href=#ubicacion >UBICACION</a></li>
+            <li :class=menuClasses><a class="pl-1" href=#precios >PRECIOS</a></li>
+            <li :class=menuClasses><a class="pl-1" href=#galeria >GALERIA</a></li>
+            <li :class=menuClasses><a class="pl-1" href=#contacto >CONTACTO</a></li>
             
             
         </ul>
