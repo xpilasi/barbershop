@@ -6,8 +6,11 @@ export default {
   theme: {
     
     backgroundImage:theme =>({
-      'barber-chair': "url('./src/assets/img/backgrounds/chair.jpg')",
-      'barber-vintage': "url('./src/assets/bg/booking_bg.jpg')"
+      
+      'barber-vintage': "url('./src/assets/bg/booking_bg.jpg')",
+      'barber-location': "url('./src/assets/bg/location_bg.jpg')",
+      'barber-prices': "url('./src/assets/bg/prices_bg.jpg')",
+      'barber-gallery': "url('./src/assets/bg/gallery_bg.jpg')",
     }),
     letterSpacing:{
       tightest: '-.075em',
