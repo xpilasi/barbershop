@@ -4,9 +4,10 @@ export default {
     './index.html', 
     './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    
     backgroundImage:theme =>({
       'barber-chair': "url('./src/assets/img/backgrounds/chair.jpg')",
-      'barber-vintage': "url('./src/assets/img/backgrounds/vintage_barber.jpg')"
+      'barber-vintage': "url('./src/assets/bg/booking_bg.jpg')"
     }),
     letterSpacing:{
       tightest: '-.075em',
@@ -31,7 +32,9 @@ export default {
         heavitas:'heavitas',
         hilborn:'hilborn',
         bebasKai:'bebasKai',
-        smythe:'smythe'
+        smythe:'smythe',
+        futura:'futura_regular',
+        futuraLight:'futura_light',
       }
     },
   },

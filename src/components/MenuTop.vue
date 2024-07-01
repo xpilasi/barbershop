@@ -7,7 +7,8 @@ import barberLogo from '../assets/img/logos/barberLogo.svg'
 import instaLogo from '../assets/img/social/instagram.svg'
 import whatsappLogo from '../assets/img/social/Whatsapp.svg'
 
-const menuClasses = ref('pl-10 text-sm  right-0 ');
+const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500');
+const navClassDesk = ref(' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center ');
 const menuLogo = 'flex left-10';
 
 const scrollPosition = ref(null);
@@ -42,9 +43,12 @@ const checkScreen = ()=>{
 //menu scrolling down
 const handleScroll = ()=>{
     if (window.scrollY > 0) {
-        menuClasses.value = 'pl-5 text-sm  transition-all duration-300';
+        menuClasses.value = 'text-sm px-2 transition-all duration-300 hover:bg-white hover:bg-opacity-5 py-3';
+        navClassDesk.value = ' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg '
+
     }else{
-        menuClasses.value = 'pl-10 text-sm transition-all duration-300';
+        menuClasses.value = 'px-5 text-sm hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500';
+        navClassDesk.value = ' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center '
     };
   }
 onMounted(()=>{
@@ -58,31 +62,29 @@ onMounted(()=>{
  
 </script>
 <template>
-      <!-- Nav no Mobile -->
-      <nav v-show= !mobile class='flex fixed right-0 left-0 sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg justify-between'>
-        <!-- <div class='flex justify-end text-white'>
-          hola
-        </div> -->
-        <ul class='  text-white font-hilborn tracking-wider  items-center'>
-          <li :class=menuLogo><img class='  pl-2' :src=barberLogo alt="" width='100'></li>
-        </ul>
-        <ul  class='flex  text-white font-hilborn font-light tracking-wider justify-end items-center'>
+
+ <!-- Nav no Mobile -->
+ <nav v-show= !mobile :class=navClassDesk>
+        
+        
+        <ul  class='flex text-white font-futuraLight tracking-widest  '>
             
-            <li :class=menuClasses><a href=# >PRECIOS</a></li>
-            <li :class=menuClasses><a href=# >AGENDAR</a></li>
-            <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
-            <li :class=menuClasses><a href=# >UBICACIÓN</a></li>
-            <li :class=menuClasses><a href=# >CLIENTES</a></li>
+            <li :class=menuClasses><a class="pl-1" href=# >RESERVA</a></li>
+            <li :class=menuClasses><a class="pl-1" href=# >UBICACION</a></li>
+            <li :class=menuClasses><a class="pl-1" href=# >PRECIOS</a></li>
+            <li :class=menuClasses><a class="pl-1" href=# >GALERIA</a></li>
+            <li :class=menuClasses><a class="pl-1" href=# >CONTACTO</a></li>
+            
             
         </ul>
-      </nav>
+</nav>
         
       <!-- Nav mobile closed-->
 
-      <nav class='flex fixed w-full left-0 right-0 bg-barber-bg justify-between'>
+      <nav class='flex fixed w-full left-0 right-0 justify-between'>
         <div class='flex justify-end w-full'>
           <!-- Burger logo -->
-          <button @click=toggleMenu v-show=showMenuIcon class="md:hidden pl-3  text-red-300 focus:outline-none h-20 w-20 justify-center items-center">
+          <button @click=toggleMenu v-show=showMenuIcon class="md:hidden pl-3  text-white focus:outline-none h-20 w-20 justify-center items-center">
 
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
@@ -104,7 +106,7 @@ onMounted(()=>{
                 </svg>
               </button>
             </li>
-            <li class='flex  justify-center  pb-5'><img  :src=barberLogo alt="" width='150'></li>
+            <!-- <li class='flex  justify-center  pb-5'><img  :src=barberLogo alt="" width='150'></li> -->
             <li class='py-8 text-center'><a href=# >PRECIOS</a></li>
             <li class='py-8 text-center'><a href=# >AGENDAR</a></li>
             <li class='py-8 text-center'><a href=# >UBICACIÓN</a></li>
@@ -112,6 +114,10 @@ onMounted(()=>{
             <li class='flex  justify-center   pt-10'><img :src=instaLogo alt="" width='50'></li>
             
         </ul>
+        <p class="bg-black"></p>
       </nav>
+
+ 
+     
 </template>
 
