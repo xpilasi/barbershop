@@ -1,11 +1,8 @@
 
 <script setup>
 import {ref,onMounted} from 'vue';
-import barbershopSvgLogo from '../assets/img/icons/barber_shop.svg';
-import moustacheSvgLogo from '../assets/img/icons/moustacheSvg.svg';
-import barberLogo from '../assets/img/logos/barberLogo.svg'
 import instaLogo from '../assets/img/social/instagram.svg'
-import whatsappLogo from '../assets/img/social/Whatsapp.svg'
+
 import BookingButtonMob from './BookingButtonMob.vue';
 
 const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500');
@@ -25,6 +22,7 @@ const toggleMenu = ()=> {
   showMenuIcon.value = !showMenuIcon.value;
   
 };
+
 
 const checkScreen = ()=>{
   windowWidth.value = window.innerWidth;
@@ -56,6 +54,8 @@ onMounted(()=>{
     
     window.addEventListener('scroll',handleScroll);
     window.addEventListener('resize',checkScreen);
+
+   
     checkScreen();
     
 });
@@ -97,21 +97,22 @@ onMounted(()=>{
 
       <!-- Nav mobile opened-->
 
-      <nav v-show= mobileNav class='  lg:hidden items-center right-0 left-0 flex fixed flex-col bg-barber-bg bg-opacity-95 h-screen w-screen text-3xl  text-white font-futura tracking-widest '>
+      <nav v-show= mobileNav class='  lg:hidden items-center right-0 left-0 flex fixed flex-col bg-barber-bg bg-opacity-95 h-screen w-screen    '>
         <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
                 </svg>
               </button>
               <div class=" h-full flex items-center">
-                <ul class=" m-0  ">
+                <ul class=" m-0 text-2xl  text-white font-futura tracking-widest ">
  
-                  <li class='py-8 text-center'><a href=# >PRECIOS</a></li>
-                  <li class='py-8 text-center'><a href=# >AGENDAR</a></li>
-                  <li class='py-8 text-center'><a href=# >UBICACIÓN</a></li>
-                  <li class='py-8 text-center'><a href=# >CLIENTES</a></li>
-                  <li class='flex  justify-center   pt-10'><img :src=instaLogo alt="" width='50'></li>
-                  <li class='flex  justify-center   pt-10'><BookingButtonMob/></li>
+                  <li class='py-7 text-center'><a href=#reserva @click=toggleMenu  >RESERVA</a></li>
+                  <li class='py-7 text-center'><a href=#ubicacion @click=toggleMenu  >UBICACION</a></li>
+                  <li class='py-7 text-center'><a href=#precios @click=toggleMenu >PRECIOS</a></li>
+                  <li class='py-7 text-center'><a href=#galeria  @click=toggleMenu>GALERIA</a></li>
+                  <li class='py-7 text-center'><a href=#contacto @click=toggleMenu >CONTACTO</a></li>
+                  <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><img :src=instaLogo alt="" width='50'></a></li>
+                  <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><BookingButtonMob/></a></li>
 
                 </ul>
 
