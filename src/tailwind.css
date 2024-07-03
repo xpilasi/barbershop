@@ -38,3 +38,7 @@
     font-family: 'futura_light';
     src: url('../src/assets/fonts/Futura/Futura_Book_font.ttf');
   }
+@font-face {
+    font-family: 'dm_serif';
+    src: url('../src/assets/fonts/DMSerif/DMSerifDisplay-Regular.ttf');
+  }

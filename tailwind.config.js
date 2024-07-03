@@ -13,6 +13,9 @@ export default {
       'barber-gallery': "url('/public/bg/gallery_bg.jpg')",
 
     }),
+    screens:{
+      'xs': '475px',
+    },
     letterSpacing:{
       tightest: '-.075em',
       tighter: '-.05em',
@@ -39,6 +42,7 @@ export default {
         smythe:'smythe',
         futura:'futura_regular',
         futuraLight:'futura_light',
+        dmSerif:'dm_serif',
       }
     },
   },
