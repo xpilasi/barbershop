@@ -5,7 +5,7 @@ import instaLogo from '../assets/img/social/instagram.svg'
 
 import BookingButtonMob from './BookingButtonMob.vue';
 
-const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500');
+const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-10 py-3 transition-all duration-500');
 const navClassDesk = ref(' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center ');
 const menuLogo = 'flex left-10';
 
@@ -82,7 +82,7 @@ onMounted(()=>{
         
       <!-- Nav mobile closed-->
 
-      <nav class='flex fixed w-full left-0 right-0 justify-between'>
+      <nav class='flex fixed w-full left-0 right-0 justify-between bg-barber-bg bg-opacity-20'>
         <div class='flex justify-end w-full'>
           <!-- Burger logo -->
           <button @click=toggleMenu v-show=showMenuIcon class="md:hidden pl-3  text-white focus:outline-none h-20 w-20 justify-center items-center">

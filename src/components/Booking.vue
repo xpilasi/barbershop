@@ -16,6 +16,7 @@ const description_2 = "Una barbería de lujo con inspiración tradicional en la 
   
         
         <img class="px-6" :src=BarberShopLogo alt="" width="600">
+        <div class="h-10"></div>
         <div id="booking_booking button" class='flex justify-center h-40  '><BookingButton/></div>
 
     </div>
