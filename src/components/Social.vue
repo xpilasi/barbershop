@@ -11,10 +11,10 @@ import {ref,onMounted} from 'vue';
         <template>
   <InstagramFeed
     :count="12"
-    accessToken="1239317897249127"
+    accessToken="dd9c9e8b71050c5b25c43e59c5baeaf0"
     :pagination="true"
     :caption="true"
-  />
+  />SOCIAL
 </template>
     </section>
     
