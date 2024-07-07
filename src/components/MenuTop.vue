@@ -2,7 +2,7 @@
 <script setup>
 import {ref,onMounted} from 'vue';
 import instaLogo from '../assets/img/social/instagram.svg'
-
+import BarberLogo from '../assets/img/logos/barbershop_logo.svg'
 import BookingButtonMob from './BookingButtonMob.vue';
 
 const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-10 py-3 transition-all duration-500');
@@ -105,7 +105,8 @@ onMounted(()=>{
               </button>
               <div class=" h-full flex items-center">
                 <ul class=" m-0 text-2xl  text-white font-futura tracking-widest ">
- 
+                  
+                  <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><img :src=BarberLogo alt="100" width=''></a></li>
                   <li class='py-7 text-center'><a href=#reserva @click=toggleMenu  >RESERVA</a></li>
                   <li class='py-7 text-center'><a href=#ubicacion @click=toggleMenu  >UBICACION</a></li>
                   <li class='py-7 text-center'><a href=#precios @click=toggleMenu >PRECIOS</a></li>
