@@ -1,5 +1,9 @@
 <script setup>
 
+const props = {
+    title : String,
+}
+
 </script>
 
 <template>
