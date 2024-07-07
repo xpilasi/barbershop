@@ -106,14 +106,14 @@ onMounted(()=>{
               <div class=" h-full flex items-center">
                 <ul class=" m-0 text-2xl  text-white font-futura tracking-widest ">
                   
-                  <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><img :src=BarberLogo alt="100" width=''></a></li>
+                  <li class='flex  justify-center pb-10 '><a href="#" @click=toggleMenu><img :src=BarberLogo alt="100" width=''></a></li>
                   <li class='py-7 text-center'><a href=#reserva @click=toggleMenu  >RESERVA</a></li>
                   <li class='py-7 text-center'><a href=#ubicacion @click=toggleMenu  >UBICACION</a></li>
                   <li class='py-7 text-center'><a href=#precios @click=toggleMenu >PRECIOS</a></li>
                   <li class='py-7 text-center'><a href=#galeria  @click=toggleMenu>GALERIA</a></li>
                   <li class='py-7 text-center'><a href=#contacto @click=toggleMenu >CONTACTO</a></li>
                   <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><img :src=instaLogo alt="" width='50'></a></li>
-                  <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><BookingButtonMob/></a></li>
+                  <li class='flex  justify-center   pt-20'><a href="#" @click=toggleMenu><BookingButtonMob/></a></li>
 
                 </ul>
 
