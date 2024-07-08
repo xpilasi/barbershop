@@ -7,6 +7,7 @@ import BookingButtonMob from './BookingButtonMob.vue';
 
 const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-10 py-3 transition-all duration-500');
 const navClassDesk = ref(' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center ');
+const navClassMobile = ref('flex fixed w-full left-0 right-0 justify-between ');
 const menuLogo = 'flex left-10';
 
 const scrollPosition = ref(null);
@@ -37,6 +38,8 @@ const checkScreen = ()=>{
   
   }
 
+ 
+
 }
 
 //menu scrolling down
@@ -44,10 +47,12 @@ const handleScroll = ()=>{
     if (window.scrollY > 0) {
         menuClasses.value = 'text-sm px-2 transition-all duration-300 hover:bg-white hover:bg-opacity-5 py-3';
         navClassDesk.value = ' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg bg-opacity-50 '
+        navClassMobile.value = ' flex fixed w-full left-0 right-0 justify-between bg-barber-bg bg-opacity-50 '
 
     }else{
         menuClasses.value = 'px-5 text-sm hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500';
         navClassDesk.value = ' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center '
+        navClassMobile.value = ' flex fixed w-full left-0 right-0 justify-between '
     };
   }
 onMounted(()=>{
@@ -82,7 +87,7 @@ onMounted(()=>{
         
       <!-- Nav mobile closed-->
 
-      <nav class='flex fixed w-full left-0 right-0 justify-between bg-barber-bg bg-opacity-20'>
+      <nav :class=navClassMobile>
         <div class='flex justify-end w-full'>
           <!-- Burger logo -->
           <button @click=toggleMenu v-show=showMenuIcon class="md:hidden pl-3  text-white focus:outline-none h-20 w-20 justify-center items-center">
@@ -97,7 +102,7 @@ onMounted(()=>{
 
       <!-- Nav mobile opened-->
 
-      <nav v-show= mobileNav class='  lg:hidden items-center right-0 left-0 flex fixed flex-col bg-barber-bg bg-opacity-95 h-screen w-screen    '>
+  <nav v-show= mobileNav class='  lg:hidden items-center right-0 left-0 flex fixed flex-col bg-barber-bg bg-opacity-95 h-screen w-screen animate-fade     '>
         <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
@@ -121,6 +126,8 @@ onMounted(()=>{
         
         
       </nav>
+
+      
 
  
      

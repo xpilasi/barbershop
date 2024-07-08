@@ -43,7 +43,22 @@ export default {
         futura:'futura_regular',
         futuraLight:'futura_light',
         dmSerif:'dm_serif',
-      }
+      },
+      animation: {
+				fade: 'fadeIn .4s ease-in-out',
+				fadeOut: 'fadeOut .4s ease-in-out',
+			},
+
+			keyframes: {
+				fadeIn: {
+					from: { opacity: 0 },
+					to: { opacity: 1 },
+				},
+				fadeOut: {
+					from: { opacity: 1 },
+					to: { opacity: 0 },
+				},
+			},
     },
   },
   plugins: [],
