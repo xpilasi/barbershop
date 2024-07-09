@@ -15,7 +15,7 @@ import BookingButton from './BookingButton.vue';
         
             
             
-                <Title class='flex justify-center  mx-20  '/>
+                <Title title="Precios" class='flex justify-center  mx-20  '/>
                 <article class='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-20 py-10  md:gap-20 font-futuraLight tracking-wider mx-20 lg:mx-60 lg:text-lg  '>
                     
                 <div class=" border-b-2  border-neutral-600 pb-2 mr-1 md:pt-0 lg:pt-0 sm:pt-5 pt-5 bg-green-400">

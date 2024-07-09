@@ -1,14 +1,19 @@
 <script setup>
 
-const props = {
-    title : String,
-}
+defineProps({
+    title:{
+        type: String,
+        required: true,
+    },
+});
+ 
+
 
 </script>
 
 <template>
-    <h2 class='text-white font-dmSerif text-6xl tracking-tighter'>
-        Precios
+    <h2 class='font-dmSerif text-6xl tracking-tighter' >
+        {{ title }}
     </h2>
 
 </template>
