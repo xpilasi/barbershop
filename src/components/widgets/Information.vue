@@ -12,7 +12,7 @@ import phoneIcon from '../../assets/img/icons/phone.svg'
 
         <div class="md:grid md:grid-cols-3 flex-col">
             
-            <div class=" flex  items-center justify-center text-center py-2 md:text-right md:py-2  md:pr-5 md:border-r-2 border-barber-bg">
+            <div class=" flex md:text-sm  items-center justify-center text-center py-2 md:text-right md:py-2  md:pr-5 md:border-r-2 border-barber-bg">
                 
                 <img :src=locationIcon alt="" width='50'>
                 <div class="flex-col">
@@ -22,7 +22,7 @@ import phoneIcon from '../../assets/img/icons/phone.svg'
                 
 
             </div>
-            <div class=" flex justify-center items-center text-center py-2 md:text-center md:py-2   ">
+            <div class=" flex md:text-sm justify-center items-center text-center py-2 md:text-center md:py-2   ">
                 
                 <img :src=calendarIcon alt="" width='50'>
                 <div class="flex-col">
@@ -33,7 +33,7 @@ import phoneIcon from '../../assets/img/icons/phone.svg'
                 
 
             </div>
-            <div class=" flex justify-center items-center py-2 md:text-left md:py-2 md:pl-5 md:border-l-2 border-barber-bg">
+            <div class=" flex justify-center md:text-sm items-center py-2 md:text-left md:py-2 md:pl-5 md:border-l-2 border-barber-bg">
                 
                 <img :src=phoneIcon alt="" width='50'>
                 <div class="flex-col">
