@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-    <h2 class='font-dmSerif text-6xl tracking-tighter' >
+    <h2 class='font-dmSerif text-5xl tracking-tighter' >
         {{ title }}
     </h2>
 

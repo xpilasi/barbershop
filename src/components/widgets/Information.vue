@@ -1,4 +1,4 @@
-<script setup>
+ <script setup>
 
 import locationIcon from '../../assets/img/icons/location.svg'
 import calendarIcon from '../../assets/img/icons/calendar.svg'
@@ -12,11 +12,11 @@ import phoneIcon from '../../assets/img/icons/phone.svg'
 
         <div class="md:grid md:grid-cols-3 flex-col">
             
-            <div class=" flex md:text-sm  items-center justify-center text-center py-2 md:text-right md:py-2  md:pr-5 md:border-r-2 border-barber-bg">
+            <div class=" flex md:text-sm  items-center md:justify-end justify-center lg:justify-end text-center   py-2 md:py-2 md:justify-end  md:pr-5 md:border-r-2 border-barber-bg">
                 
                 <img :src=locationIcon alt="" width='50'>
                 <div class="flex-col">
-                    <p>C/Romans 1,</p>
+                    <p>Romans 1,</p>
                     <p>08025 Barcelona</p>
                 </div>
                 
@@ -33,7 +33,7 @@ import phoneIcon from '../../assets/img/icons/phone.svg'
                 
 
             </div>
-            <div class=" flex justify-center md:text-sm items-center py-2 md:text-left md:py-2 md:pl-5 md:border-l-2 border-barber-bg">
+            <div class=" flex justify-center  md:text-sm items-center py-2 md:text-left md:py-2 md:pl-5 md:border-l-2 border-barber-bg">
                 
                 <img :src=phoneIcon alt="" width='50'>
                 <div class="flex-col">
