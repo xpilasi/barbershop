@@ -10,7 +10,7 @@ import BookingButton from './BookingButton.vue';
 
 </script>
 <template>
-    <section id="precios" class=" bg-barber-prices min-h-screen bg-cover text-white pt-28">
+    <section id="precios" class=" bg-barber-prices min-h-screen h-full bg-cover text-white pt-20">
        
         
             

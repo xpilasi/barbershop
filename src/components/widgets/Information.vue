@@ -8,7 +8,7 @@ import phoneIcon from '../../assets/img/icons/phone.svg'
 
 <template>
 
-    <article class='font-futuraLight tracking-widest pt-10'>
+    <article class='font-futuraLight tracking-widest pt-10 '>
 
         <div class="md:grid md:grid-cols-3 flex-col">
             

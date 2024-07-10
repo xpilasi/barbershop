@@ -10,7 +10,7 @@
     </script>
     <template>
         
-        <section id="ubicacion" class="bg-barber-location min-h-screen h-full w-auto pt-16 bg-cover flex-col  items-center">
+        <section id="ubicacion" class="bg-barber-location min-h-screen h-full w-auto pt-20 bg-cover flex-col  items-center">
             
             <article>
                <div class="justify-center flex">
