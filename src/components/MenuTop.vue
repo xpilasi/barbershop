@@ -6,7 +6,7 @@ import BarberLogo from '../assets/img/logos/barbershop_logo.svg'
 import BookingButtonMob from './BookingButtonMob.vue';
 
 const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-10 py-3 transition-all duration-500');
-const navClassDesk = ref(' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-green-300 ');
+const navClassDesk = ref(' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center  ');
 const navClassMobile = ref('flex fixed w-full left-0 right-0 justify-between ');
 const menuLogo = 'flex left-10';
 

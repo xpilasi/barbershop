@@ -15,18 +15,14 @@ import Information from './widgets/Information.vue';
         <img class="px-10 flex justify-end w-full " :src=BarberShopLogo alt="" width="600">
         <div class="h-10"></div>
         <div id="booking_booking button" class='flex justify-center h-40  '><BookingButton/></div>
-        <div class="bg-red-200">
-            <Information/>
+        <div class="">
+            <Information whiteIcon='true'/>
         </div>
         
     </div>
     
     
 </section>
-
-    
-
-
 
 </template>
 
