@@ -7,14 +7,14 @@ import Information from './widgets/Information.vue';
 
 </script>
 <template>
-<section id="reserva" class='text-white bg-barber-booking min-h-screen w-auto py-5 bg-cover flex-col '>
+<section id="reserva" class='text-white bg-barber-booking min-h-screen w-auto  bg-cover '>
 
-    <div class=' w-full   sm:px-5 md:px-20 lg:px-50 mt-20  py-10 lg:py-0 md:py-0'>
+    <div class=' w-auto min-h-screen lg:px-36 lg:pt-28 flex flex-col  sm:px-5 md:px-20 lg:px-50  justify-between'>
   
         
-        <img class="px-10 flex justify-end w-full " :src=BarberShopLogo alt="" width="600">
-        <div class="h-10"></div>
-        <div id="booking_booking button" class='flex justify-center h-40  '><BookingButton/></div>
+        <img class=" flex px-10 pt-20 lg:px-36 lg:pt-20  w-full  " :src=BarberShopLogo alt="" width="500">
+        
+        <div id="booking_booking button" class='flex justify-center  items-center h-40 '><BookingButton/></div>
         <div class="">
             <Information whiteIcon='true'/>
         </div>
