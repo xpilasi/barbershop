@@ -8,6 +8,7 @@ import Location from './components/Location.vue';
 import Prices from './components/Prices.vue';
 import { Transition } from '@vue/runtime-dom';
 
+
 </script>
 
 <template >
