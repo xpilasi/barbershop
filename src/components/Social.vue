@@ -12,7 +12,7 @@ import Galeria from './widgets/Gallery.vue';
       <div class="justify-center flex">
                 <Title title="Instagram"/>
         </div> 
-        <div class="flex justify-center bg-red-400 py-10">
+        <div class="flex justify-center  py-10">
             <Galeria/>
         </div>
         
