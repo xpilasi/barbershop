@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-left {
+  
+  left: calc(50% - 19rem);
+}
+
 @font-face {
     font-family: 'merri_w_regular';
     src: url('../src/assets/fonts/Merriweather/Merriweather-Regular.ttf');
@@ -42,3 +47,4 @@
     font-family: 'dm_serif';
     src: url('../src/assets/fonts/DMSerif/DMSerifDisplay-Regular.ttf');
   }
+

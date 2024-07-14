@@ -26,7 +26,7 @@ defineProps({
 
         <div class="md:grid md:grid-cols-3 flex-col">
             
-            <div class=' flex md:text-sm  items-center md:justify-end justify-center lg:justify-end text-center   py-10 md:py-2 md:justify-end  md:pr-5 '>
+            <div class=' flex md:text-sm  items-center  justify-center lg:justify-end text-center   py-10 md:py-2 md:justify-end  md:pr-5 '>
                 
                 <img :src= ' whiteIcon ? locationIconWhite : locationIcon' alt="" width='50'>
                 <div class="flex-col">
@@ -47,10 +47,10 @@ defineProps({
                 
 
             </div>
-            <div class=" flex justify-center  md:text-sm items-center py-10 md:text-left md:py-2 md:pl-5 ">
+            <div class=" flex justify-center  md:text-sm items-center py-10 md:justify-start md:py-2 md:pl-5 ">
                 
                 <img :src= ' whiteIcon ? phoneIconWhite : phoneIcon 'alt="" width='50'>
-                <div class="flex-col">
+                <div class="flex-col ">
                     <p>+34 632610976</p>
                     
                 </div>
