@@ -11,7 +11,7 @@ import Information from './widgets/Information.vue';
 
     <div class=' w-auto min-h-screen lg:px-36 lg:pt-28 flex flex-col  sm:px-5 md:px-20 lg:px-50  py-20 justify-between'>
   
-        <div class="flex justify-center py-20">
+        <div class="flex justify-center py-20 px-10">
             <img class="w-96" :src=BarberShopLogo alt="">
         </div>
         
