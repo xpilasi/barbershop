@@ -24,39 +24,50 @@ defineProps({
 
     <article class='font-futuraLight tracking-widest pt-10 '>
 
-        <div class="md:grid md:grid-cols-3 flex-col">
+        <div class="lg:grid lg:grid-cols-3 flex-col ">
             
-            <div class=' flex text-xs md:text-sm  items-center  justify-center lg:justify-end text-center    md:py-2 md:justify-end  md:pr-5'>
+           <div class="flex justify-center">
+            <div class=' flex w-80 h-20 lg:text-sm  items-center  lg:text-center mb-5   lg:justify-end pl-5  '>
                 
-                <img :src= ' whiteIcon ? locationIconWhite : locationIcon' alt="" width='50'>
-                <div class="flex-col">
-                    <p>Romans 1,</p>
-                    <p>08025 Barcelona</p>
+                <img :src= ' whiteIcon ? locationIconWhite : locationIcon' alt="" width='50' class="  ">
+                <div class="flex-col pl-5 text-end">
+                    <p>Taxdirts 21, 08025</p>
+                    <p>Barcelona</p>
                 </div>
                 
 
             </div>
-            <div class=" flex sm:text-sm text-xs md:text-sm justify-center  items-center text-center py-2 md:text-center    ">
+           </div>
+
+            
+           <div class="flex justify-center">
+                <div class="pl-5  flex w-80 h-20 lg:text-sm  mb-5  justify-start lg:justify-center items-center lg:text-center py-2   ">
                 
                 <img :src= ' whiteIcon ? calendarIconWhite : calendarIcon' alt="" width='50'>
-                <div class="flex-col">
-                    <p>LUN-VIER 10.00 - 20.00</p>
-                    <p>SÁBADO 10.00 - 18.00</p>
+                <div class="flex-col pl-5 text-end">
+                    <p>L-V: 10.00 - 20.00</p>
+                    <p>S: 10.00 - 18.00</p>
                     
                 </div>
-                
-
-            </div>
-            <div class=" flex justify-center text-xs md:text-sm items-center  md:justify-start py-2 md:pl-5 ">
-                
-                <img :src= ' whiteIcon ? phoneIconWhite : phoneIcon 'alt="" width='50'>
-                <div class="flex-col ">
-                    <p>+34 632610976</p>
-                    
+           
                 </div>
-                
-
             </div>
+
+           <div class="flex justify-center">
+                <div class=" pl-5 flex w-80 h-20 justify-start  lg:text-sm items-center  lg:justify-start   ">
+                    
+                    <img :src= ' whiteIcon ? phoneIconWhite : phoneIcon 'alt="" width='50'>
+                    <div class="flex-col pl-5 text-end ">
+                        <p>  + 34 632 610 976</p>
+                        
+                    </div>
+                    
+
+            
+                </div>
+            </div>
+                
+            
             
 
         </div>
