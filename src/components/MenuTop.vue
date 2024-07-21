@@ -2,7 +2,7 @@
 <script setup>
 import {ref,onMounted} from 'vue';
 import instaLogo from '../assets/img/social/instagram.svg'
-import BarberLogo from '../assets/img/logos/barbershop_logo.svg'
+import BarberLogo from '../assets/img/logos/logoVintageGroom.svg'
 import BookingButtonMob from './BookingButtonMob.vue';
 
 const menuClasses = ref('px-5 text-sm hover:bg-white hover:bg-opacity-10 py-3 transition-all duration-500');
