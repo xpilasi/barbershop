@@ -2,6 +2,7 @@
 import {ref,onMounted} from 'vue';
 import Title from './Titles/Title.vue';
 import BookingButton from './BookingButton.vue';
+import logoVintageGroom from '../assets/img/logos/logoVintageGroom.svg';
 
 
 
@@ -11,11 +12,11 @@ import BookingButton from './BookingButton.vue';
 </script>
 <template>
     <section id="precios" class=" bg-barber-prices min-h-screen h-full bg-cover text-white pt-20">
-       
-        
-            
-            
-                <Title title="Precios" class='flex justify-center  mx-20  '/>
+                <!-- <Title title="Precios" class='flex justify-center  mx-20  '/> -->
+                <article class="flex justify-center py-5">
+                    <img class="w-80" :src=logoVintageGroom alt="">
+                </article>
+                
                 <article class='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-20 py-10  md:gap-20 font-futuraLight tracking-wider mx-20 lg:mx-60 lg:text-lg  '>
                     
                 <div class=" border-b-2  border-neutral-600 pb-2 mr-1 md:pt-0 lg:pt-0 sm:pt-5 pt-5 ">
