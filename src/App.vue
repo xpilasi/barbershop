@@ -6,6 +6,8 @@ import Footer from './components/Footer.vue';
 import Social from './components/Social.vue';
 import Location from './components/Location.vue';
 import Prices from './components/Prices.vue';
+import ContactForm from './components/ContactForm.vue';
+
 import { Transition } from '@vue/runtime-dom';
 
 
@@ -24,6 +26,7 @@ import { Transition } from '@vue/runtime-dom';
     
     <Prices/>
     <Social/>
+    <ContactForm/>
     <Footer/>
 
   </div>
