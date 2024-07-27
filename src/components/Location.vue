@@ -15,7 +15,7 @@
                 <!-- <Title class="flex justify-center" title="Ubicación"/> -->
                
             
-            <div class="  min-h-screen flex flex-col  sm:px-5 md:px-20 lg:px-50 justify-between  ">
+            <div class="  min-h-screen flex flex-col justify-between  ">
             
             <article>
                 
