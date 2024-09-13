@@ -7,11 +7,11 @@ import Information from './widgets/Information.vue';
 
 </script>
 <template>
-<section id="reserva" class='text-white bg-barber-booking min-h-screen w-auto  bg-cover '>
+<section id="reserva" class=' text-white bg-barber-booking min-h-screen w-auto  bg-cover '>
 
-    <div class=' w-auto min-h-screen lg:px-10 lg:pt-28 flex flex-col  sm:px-5 md:px-20 lg:px-50  py-20 justify-between'>
+    <div class=' w-auto min-h-screen lg:px-10 lg:pt-28 flex flex-col  sm:px-5 md:px-20 lg:px-50   justify-between '>
   
-        <div class="flex justify-center py-20 px-10">
+        <div class="flex justify-center px-10">
             <img class="w-96" :src=BarberShopLogo alt="">
         </div>
         
