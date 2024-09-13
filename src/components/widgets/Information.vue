@@ -24,10 +24,10 @@ defineProps({
 
     <article class='font-futuraLight tracking-widest pt-10 '>
 
-        <div class="lg:grid lg:grid-cols-3 flex-col  py-5 ">
+        <div class="lg:grid lg:grid-cols-3 flex-col  py-5">
             
            <div class="flex justify-between ">
-            <div class=' flex w-full h-full lg:text-sm  mb-5 lg:justify-center items-center lg:text-center py-2  '>
+            <div class=' flex w-full h-full lg:text-sm  mb-5 items-center justify-center lg:text-center py-2  '>
                 
                 <img :src= ' whiteIcon ? locationIconWhite : locationIcon' alt="" width='50' class="  ">
                 <div class="flex-col pl-5 text-end">
@@ -41,7 +41,7 @@ defineProps({
 
             
            <div class="flex justify-between ">
-                <div class="flex w-full h-full lg:text-sm  mb-5 lg:justify-center items-center lg:text-center py-2    ">
+                <div class="flex w-full h-full lg:text-sm  mb-5 justify-center items-center lg:text-center py-2    ">
                 
                 <img :src= ' whiteIcon ? calendarIconWhite : calendarIcon' alt="" width='50'>
                 <div class="flex-col pl-5 text-end">
@@ -54,7 +54,7 @@ defineProps({
             </div>
 
            <div class="flex justify-between ">
-                <div class=" flex w-full h-full lg:text-sm  mb-5 lg:justify-center items-center lg:text-center py-2   ">
+                <div class=" flex w-full h-full lg:text-sm  mb-5 justify-center items-center lg:text-center py-2   ">
                     
                     <img :src= ' whiteIcon ? phoneIconWhite : phoneIcon 'alt="" width='50'>
                     <div class="flex-col pl-5 text-end ">
