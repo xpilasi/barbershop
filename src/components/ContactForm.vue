@@ -8,8 +8,10 @@ import BarberLogo from '../assets/img/logos/logoVintageGroom.svg'
         
          justify-center items-center ">
                 <div class=' flex-col justify-center text-center '>
-
-                        <img :src=BarberLogo class=' px-10 w-full ' alt="">
+                        <div class="w-full flex justify-center">
+                                <img :src=BarberLogo class='  w-40  ' alt="">
+                        </div>
+                        
                         <h2 class='py-5 text-center text-white tracking-widest font-futuraLight'>Pónte en contacto con nosotros</h2>
 
                         <form action="" class=' grid  w-96 ml-0'>

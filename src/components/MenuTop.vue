@@ -45,12 +45,12 @@ const checkScreen = ()=>{
 //menu scrolling down
 const handleScroll = ()=>{
     if (window.scrollY > 0) {
-        menuClasses.value = 'text-sm px-2 transition-all duration-300 hover:bg-white hover:bg-opacity-5 py-3';
-        navClassDesk.value = ' py-1 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg bg-opacity-50 '
+        menuClasses.value = 'text-xs px-2 transition-all duration-300 hover:bg-white hover:bg-opacity-5 py-3';
+        navClassDesk.value = ' py-0 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center bg-barber-bg bg-opacity-50 '
         navClassMobile.value = ' flex fixed w-full left-0 right-0 justify-between bg-barber-bg bg-opacity-50 '
 
     }else{
-        menuClasses.value = 'px-5 text-sm hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500';
+        menuClasses.value = 'px-5 text-md hover:bg-white hover:bg-opacity-5 py-3 transition-all duration-500';
         navClassDesk.value = ' py-5 flex fixed w-full justify-center sm:pr-10 sm:pl-5 md:pr-5 md:pl-5 lg:pr-20  lg:pl-20 items-center '
         navClassMobile.value = ' flex fixed w-full left-0 right-0 justify-between '
     };
