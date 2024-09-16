@@ -102,23 +102,23 @@ onMounted(()=>{
 
       <!-- Nav mobile opened-->
 
-  <nav v-show= mobileNav class='  lg:hidden items-center right-0 left-0 flex fixed flex-col bg-barber-bg bg-opacity-95 h-screen w-screen animate-fade     '>
-        <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4  text-white focus:outline-none h-20 w-20 justify-center items-center">
+  <nav v-show= mobileNav class='  lg:hidden items-center right-0 left-0 flex fixed flex-col bg-barber-bg  h-screen w-screen animate-fade    '>
+              <button @click=toggleMenu v-show= mobileNav class="md:hidden  flex absolute right-4 top-4   text-white focus:outline-none h-20 w-20 justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6L18 18M18 6L6 18" />
                 </svg>
               </button>
-              <div class=" h-full flex items-center">
-                <ul class=" m-0 text-2xl  text-white font-futura tracking-widest ">
+              <div class=" h-full flex items-center  justify-center ">
+                <ul class="  text-2xl  text-white font-futura tracking-widest flex flex-col  ">
                   
-                  <li class='flex  justify-center pb-10 '><a href="#" @click=toggleMenu><img :src=BarberLogo alt="100" width=''></a></li>
-                  <li class='py-7 text-center'><a href=#reserva @click=toggleMenu  >RESERVA</a></li>
-                  <li class='py-7 text-center'><a href=#ubicacion @click=toggleMenu  >UBICACION</a></li>
-                  <li class='py-7 text-center'><a href=#precios @click=toggleMenu >PRECIOS</a></li>
-                  <li class='py-7 text-center'><a href=#galeria  @click=toggleMenu>GALERIA</a></li>
-                  <li class='py-7 text-center'><a href=#contacto @click=toggleMenu >CONTACTO</a></li>
-                  <li class='flex  justify-center   pt-10'><a href="#" @click=toggleMenu><img :src=instaLogo alt="" width='50'></a></li>
-                  <li class='flex  justify-center   pt-20'><a href="#" @click=toggleMenu><BookingButtonMob/></a></li>
+                  <li class='flex  justify-center pb-10 '><a href="#" @click=toggleMenu><img :src=BarberLogo alt="100" width='180'></a></li>
+                  <li class='py-4 text-center text-md'><a href=#reserva @click=toggleMenu  >RESERVA</a></li>
+                  <li class='py-4 text-center text-md'><a href=#ubicacion @click=toggleMenu  >UBICACION</a></li>
+                  <li class='py-4 text-center text-md'><a href=#precios @click=toggleMenu >PRECIOS</a></li>
+                  <li class='py-4 text-center text-md'><a href=#galeria  @click=toggleMenu>GALERIA</a></li>
+                  <li class='py-4 text-center'><a href=#contacto @click=toggleMenu >CONTACTO</a></li>
+                  <li class='py-4 flex  justify-center   '><a href="#" @click=toggleMenu><img :src=instaLogo alt="" width='50'></a></li>
+                  <li class='pt-10 flex  justify-center   '><a href="#" @click=toggleMenu><BookingButtonMob/></a></li>
 
                 </ul>
 
